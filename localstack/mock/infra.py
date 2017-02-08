@@ -293,7 +293,7 @@ def check_aws_credentials():
 
 def start_infra(async=False, dynamodb_update_listener=None, kinesis_update_listener=None,
         apigateway_update_listener=None, sns_update_listener=None,
-        apis=['s3', 'sns', 'sqs', 'es', 'apigateway', 'dynamodb', 'kinesis', 'dynamodbstreams', 'firehose', 'lambda']):
+        apis=['s3', 'sns', 'sqs', 'apigateway', 'dynamodb', 'kinesis', 'dynamodbstreams', 'firehose', 'lambda']):
     try:
         if not dynamodb_update_listener:
             dynamodb_update_listener = update_dynamodb
